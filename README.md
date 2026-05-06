@@ -289,4 +289,4 @@ Multiple photos per person improves accuracy. Clear frontal photos in similar li
 
 ---
 
-## Created by [Yaniv Haliwa](https://github.com/YanivHaliwa) for security testing
+Created by [Yaniv Haliwa](https://github.com/YanivHaliwa) for security testing
