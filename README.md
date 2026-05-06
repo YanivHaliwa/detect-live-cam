@@ -202,9 +202,9 @@ Full server output — camera connection events, model loading, recognition even
 ```
 [10:41:34] HOME  LIVE  (drained 14 stale frames)
 [10:41:36] HOME2 LIVE  (drained 17 stale frames)
-  [10:42:11]  Yaniv match 87%  →  HOME
-  [10:44:03]  Chalie match 82%  →  HOME
-  [10:47:11]  Yaniv match 87%  →  HOME
+  [10:42:11]  Alice match 87%  →  HOME
+  [10:44:03]  Bob match 82%  →  HOME
+  [10:47:11]  Alice match 87%  →  HOME
 ```
 
 ### Monitor log (`monitor_log`)
@@ -213,10 +213,10 @@ Compact event log — one line per detection change, with confidence:
 
 ```
 [10:41:34] STATE | cam: HOME (SD) | hd: off | detect: on
-[10:42:11] DETECT | home: Yaniv (87%)
-[10:44:03] DETECT | home: Chalie (82%), Yaniv (87%)
-[10:44:58] DETECT | home: Yaniv (87%)
-[10:52:01] DETECT | home2: Chalie (79%)
+[10:42:11] DETECT | home: Alice (87%)
+[10:44:03] DETECT | home: Bob (82%), Alice (87%)
+[10:44:58] DETECT | home: Alice (87%)
+[10:52:01] DETECT | home2: Bob (79%)
 ```
 
 A new DETECT line is written only when the set of visible named people changes.
