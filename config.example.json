@@ -1,0 +1,34 @@
+{
+  "family_dir": "family",
+
+  "identity_strictness": 5,
+  "detection_sensitivity": 5,
+  "monitor_log": "cam_monitor.log",
+  "server_log": "/tmp/live_web.log",
+  "box_size": 75,
+  "box_offset_x": 0,
+  "box_offset_y": 0,
+  "identity_colors": {
+    "johndoe1": "deepskyblue",
+    "johndoe2": "hotpink"
+  },
+
+  "cameras": {
+    "cam1": {
+      "host": "192.168.1.100",
+      "user": "admin",
+      "password": "yourpassword",
+      "port": 554,
+      "path_sd": "/stream2",
+      "path_hd": "/stream1"
+    },
+    "cam2": {
+      "host": "192.168.1.101",
+      "user": "admin",
+      "password": "yourpassword",
+      "port": 554,
+      "path_sd": "/stream2",
+      "path_hd": "/stream1"
+    }
+  }
+}
