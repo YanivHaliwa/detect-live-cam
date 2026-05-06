@@ -1,12 +1,12 @@
 {
   "family_dir": "family",
 
-  "identity_strictness": 5,
-  "detection_sensitivity": 5,
+  "identity_strictness": 1,
+  "detection_sensitivity": 7,
   "monitor_log": "cam_monitor.log",
   "server_log": "/tmp/live_web.log",
-  "box_size": 75,
-  "box_offset_x": 0,
+  "box_size": 90,
+  "box_offset_x": 15,
   "box_offset_y": 0,
   "identity_colors": {
     "johndoe1": "deepskyblue",

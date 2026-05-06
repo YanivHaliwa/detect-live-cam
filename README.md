@@ -71,7 +71,7 @@ wget https://github.com/ultralytics/assets/releases/download/v8.3.0/yolo11n-pose
 
 4. Start the server:
    ```bash
-   ./restart.sh
+   python3 live_web.py --restart
    ```
    Then open `http://localhost:8766/`.
 
@@ -84,12 +84,12 @@ All settings live in `config.json`. Copy from `config.example.json` to start.
 | Key | Default | Description |
 |---|---|---|
 | `family_dir` | `"family"` | Path to face reference photos (relative or absolute) |
-| `identity_strictness` | `5` | 1–10: how many strong face reads needed to lock a name. 1 = fast/loose, 10 = strict |
-| `detection_sensitivity` | `5` | 1–10: YOLO body detection sensitivity. 1 = catches everything, 10 = only clear detections |
-| `monitor_log` | `"/tmp/cam_monitor.log"` | Path for the compact detection event log |
+| `identity_strictness` | `1` | 1–10: how many strong face reads needed to lock a name. 1 = fast/loose, 10 = strict |
+| `detection_sensitivity` | `7` | 1–10: YOLO body detection sensitivity. 1 = catches everything, 10 = only clear detections |
+| `monitor_log` | `"cam_monitor.log"` | Path for the compact detection event log. Relative paths resolve from the project folder |
 | `server_log` | `"/tmp/live_web.log"` | Path for the full server log |
-| `box_size` | `75` | Head box size in pixels (SD frame reference) |
-| `box_offset_x` | `0` | Horizontal offset of the head box in pixels |
+| `box_size` | `90` | Head box size in pixels (SD frame reference) |
+| `box_offset_x` | `15` | Horizontal offset of the head box in pixels |
 | `box_offset_y` | `0` | Vertical offset of the head box in pixels |
 | `identity_colors` | `{}` | Per-person box colors. Accepts CSS names, hex, rgb(), hsl() |
 
